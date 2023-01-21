@@ -5,8 +5,8 @@ import { ListAllUsersUseCase } from "./ListAllUsersUseCase";
 class ListAllUsersController {
   constructor(private listAllUsersUseCase: ListAllUsersUseCase) {}
 
-  handle(request: Request, response: Response): Response {
-    // Complete aqui
+  handle(request: Request, response: Response) {
+    
   }
 }
 

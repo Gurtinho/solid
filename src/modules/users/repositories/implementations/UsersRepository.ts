@@ -22,11 +22,11 @@ class UsersRepository implements IUsersRepository {
     // Complete aqui
   }
 
-  findById(id: string): User | undefined {
+  findById(id: string): User {
     // Complete aqui
   }
 
-  findByEmail(email: string): User | undefined {
+  findByEmail(email: string): User {
     // Complete aqui
   }
 

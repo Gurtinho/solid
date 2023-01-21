@@ -5,8 +5,10 @@ import { ShowUserProfileUseCase } from "./ShowUserProfileUseCase";
 class ShowUserProfileController {
   constructor(private showUserProfileUseCase: ShowUserProfileUseCase) {}
 
-  handle(request: Request, response: Response): Response {
-    // Complete aqui
+  handle(request: Request, response: Response) {
+    const { user_id } = request.params;
+    this.showUserProfileUseCase.execute(user_id);
+    return response.status(200).send();
   }
 }
 
